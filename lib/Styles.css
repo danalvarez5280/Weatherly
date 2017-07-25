@@ -1,0 +1,67 @@
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+hr {
+  max-width: 100px;
+}
+
+.welcome-page {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.search-area {
+  align-items: center;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: center;
+  width: 200px;
+}
+
+.submit-btn {
+  margin-top: 10px;
+}
+
+.current-weather {
+  background-color: pink;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.hourly-forecast, .days-forcast {
+  background-color: purple;
+  padding: 10px;
+  text-align: center;
+}
+
+.days-forcast {
+  background-color: green;
+}
+
+.seven-hour,
+.ten-day {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  border: 2px solid white;
+  padding: 10px;
+}
