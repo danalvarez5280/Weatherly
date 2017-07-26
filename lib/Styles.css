@@ -81,7 +81,7 @@ hr {
   background-color: #4F6272;
   border-right: 1px solid black;
   color: #FAF0CA;
-  flex: 1;
+  flex: 2;
   min-height: 100%;
   padding: 20px;
   text-align: center;
@@ -93,15 +93,15 @@ hr {
   justify-content: space-around;
 }
 
-.hourly-forecast, .days-forcast {
+.hourly-forecast, .days-forcast, .searched-cities {
   background-color: #EAF6F9;
   flex: 1;
-  height: 100%;
+  min-height: 100%;
   padding: 10px;
 }
 
 .seven-hour,
-.ten-day {
+.ten-day, .my-city {
   display: flex;
   flex-direction: column;
 }
