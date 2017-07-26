@@ -1,4 +1,10 @@
+/* Colors
+    Snow - #B9C6C9 -- COLD
+    Sun or Cloud - #0FA3B1 -- SUNNY
+    Thunderstorm or Rain - #4F6272 --RAINY */
+
 body {
+  background-color: #0D3B66;
   display: flex;
   flex-direction: row;
   font-family: 'Roboto', sans-serif;
@@ -11,7 +17,7 @@ html {
 
 h1 {
   background-color: #F45B69;
-  color: white;
+  color: #FAFAFA;
   height: 40px;
   margin: 10px 20px;
   text-shadow: 2px 2px black;
@@ -23,9 +29,28 @@ hr {
 
 .search-area {
   background-color: #F45B69;
+  border: 1px solid black;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
+}
+
+.welcome-search {
+  align-items: center;
+  color: #FAF0CA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 1px 1px 5px black;
+}
+
+.welcome-header {
+  background-color: #F45B69;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
 }
 
 .inputs {
@@ -34,8 +59,8 @@ hr {
 
 .text-field {
   border: 1px solid black;
-  opacity: 1;
   height: 20px;
+  opacity: 1;
   width: 200px;
 }
 
@@ -53,12 +78,13 @@ hr {
 }
 
 .current-weather {
-  background-color: #0D3B66;
+  background-color: #4F6272;
+  border-right: 1px solid black;
   color: #FAF0CA;
-  height: 100vh;
+  flex: 1;
+  min-height: 100%;
   padding: 20px;
   text-align: center;
-  width: 200px;
 }
 
 .high-low {
@@ -69,8 +95,9 @@ hr {
 
 .hourly-forecast, .days-forcast {
   background-color: #EAF6F9;
+  flex: 1;
+  height: 100%;
   padding: 10px;
-  width: auto;
 }
 
 .seven-hour,
@@ -85,10 +112,11 @@ hr {
   box-shadow: 1px 1px 5px black;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   font-size: 12px;
+  justify-content: space-around;
   margin-bottom: 20px;
   opacity: 0.7;
+  padding: 5px;
 }
 
 .card-info {
@@ -101,7 +129,22 @@ hr {
 }
 
 .binoculars-image {
-  margin: 10px;
   height: 30px;
+  margin: 10px;
   width: 30px;
 }
+
+.sun {
+  height: 65px;
+  width: 65px;
+}
+
+.creeper {
+  height: 80px;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  width: 80px;
+}
+
+
+/* Media Queries */
