@@ -13,7 +13,7 @@ h1 {
   background-color: #F45B69;
   color: white;
   height: 40px;
-  margin: 0 20px;
+  margin: 10px 20px;
   text-shadow: 2px 2px black;
 }
 
@@ -28,18 +28,22 @@ hr {
   width: 100%;
 }
 
+.inputs {
+  margin-top: 15px;
+}
+
 .text-field {
   border: 1px solid black;
-  margin-right: 10px;
   opacity: 1;
   height: 20px;
   width: 200px;
 }
 
 .submit-btn {
-  background-color: #48CFAD;
-  border: none;
-  border-radius: 30%;
+  background-color: #2CA58D;
+  border: 1px solid black;
+  height: 23px;
+  padding: 1px;
   width: 90px;
 }
 
@@ -97,7 +101,7 @@ hr {
 }
 
 .binoculars-image {
-  /*margin: 10px;*/
-  margin-right: 10px;
+  margin: 10px;
+  height: 30px;
   width: 30px;
 }
