@@ -119,6 +119,14 @@ hr {
   padding: 5px;
 }
 
+.recent-cities:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  opacity: 0.3;
+
+}
+
 .card-info {
   flex: 1;
   margin-left: 15px;
