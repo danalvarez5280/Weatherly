@@ -144,9 +144,16 @@ hr {
   width: 30px;
 }
 
-.sun {
+.main-icon {
   height: 65px;
   width: 65px;
+}
+
+.small-icon {
+  height: 30px;
+  width: 30px;
+  filter: hue-rotate(-600deg);
+  filter:brightness(0.7);
 }
 
 .creeper {
