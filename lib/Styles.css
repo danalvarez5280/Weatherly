@@ -78,6 +78,7 @@ hr {
 
 .current-weather {
   background-color: #0FA3B1;
+  border-top: 1px solid black;
   border-right: 1px solid black;
   color: #FAF0CA;
   flex: 2;
