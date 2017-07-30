@@ -67,8 +67,49 @@ hr {
   background-color: #2CA58D;
   border: 1px solid black;
   height: 23px;
+  margin-top: 5px;
   padding: 1px;
   width: 90px;
+}
+
+.submit-btn:hover {
+  background-color: black;
+  color: #2CA58D;
+  cursor: pointer;
+}
+
+.suggestion-area {
+  background-color: #0D3B66;
+  /*border: 2px solid black;*/
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+  justify-content: space-around;
+  margin-top: 25px;
+  overflow: scroll;
+  width: 150px;
+}
+
+.suggestion-nav {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  width: 200px;
+}
+
+.suggestion-button {
+  background-color: #F45B69;
+  border: 1px solid black;
+  height: 40px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 100px;
+}
+
+.suggestion-button:hover {
+  background-color: black;
+  border: 1px solid black;
+  color: #2CA58D;
 }
 
 .forecast {
@@ -153,7 +194,7 @@ hr {
   height: 30px;
   width: 30px;
   filter: hue-rotate(-600deg);
-  filter:brightness(0.7);
+  filter:brightness(0.4);
 }
 
 .creeper {
