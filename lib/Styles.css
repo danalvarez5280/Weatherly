@@ -72,7 +72,7 @@ hr {
   width: 90px;
 }
 
-.submit-btn:hover {
+.submit-btn:hover:enabled {
   background-color: black;
   color: #2CA58D;
   cursor: pointer;
@@ -116,7 +116,7 @@ hr {
   text-align: left;
 }
 
-.nav-button:hover {
+.nav-button:hover:enabled {
   cursor: pointer;
   background-color: #FAF0CA;
   color:#0D3B66;
