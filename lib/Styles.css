@@ -80,7 +80,6 @@ hr {
 
 .suggestion-area {
   background-color: #0D3B66;
-  /*border: 2px solid black;*/
   display: flex;
   flex-wrap: wrap;
   height: 200px;
@@ -91,10 +90,10 @@ hr {
 }
 
 .suggestion-nav {
-  display: flex;
-  flex-direction: row;
-  overflow-x: scroll;
-  width: 200px;
+  height: 50px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 205px;
 }
 
 .suggestion-button {
@@ -106,10 +105,28 @@ hr {
   width: 100px;
 }
 
+.nav-button {
+  background-color: #0D3B66;
+  color: #FAF0CA;
+  border: 1px solid black;
+  height: 26px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 205px;
+  text-align: left;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  background-color: #FAF0CA;
+  color:#0D3B66;
+}
+
 .suggestion-button:hover {
   background-color: black;
   border: 1px solid black;
   color: #2CA58D;
+  cursor: pointer;
 }
 
 .forecast {
@@ -226,7 +243,6 @@ hr {
   background-color: black;
   color: #EAF6F9;
   cursor: pointer;
-  /*opacity: 1;*/
 }
  .tab-navigation button:focus {
    opacity: 1;
