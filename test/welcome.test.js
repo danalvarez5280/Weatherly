@@ -5,23 +5,31 @@ import LocalStorage from '../test_helpers/mockLocalStorage';
 
 
 describe('WelcomePage', () => {
-  let wrapper;
   window.localStorage = new LocalStorage();
 
+  const clickSubmitFn = jest.fn();
+  const setCityFn = jest.fn();
+  const clickCityFn = jest.fn();
 
-  beforeEach(() => {
-    const clickSubmitFn = jest.fn();
-    const setCityFn = jest.fn();
-    const clickCityFn = jest.fn();
+  const wrapper = shallow(<WelcomePage
+    clickedSubmit = { clickSubmitFn }
+    setCity = { setCityFn }
+    suggestions = { [] }
+    clickCity = { clickCityFn }
+    inputValue = { 'city' }/>)
 
-
-    wrapper = shallow(<WelcomePage
-      clickedSubmit = { clickSubmitFn }
-      setCity = { setCityFn }
-      suggestions = { [] }
-      clickCity = { clickCityFn }
-      inputValue = { 'city' }/>)
-  })
+  // beforeEach(() => {
+  //   const clickSubmitFn = jest.fn();
+  //   const setCityFn = jest.fn();
+  //   const clickCityFn = jest.fn();
+  //
+  //   const wrapper = shallow(<WelcomePage
+  //     clickedSubmit = { clickSubmitFn }
+  //     setCity = { setCityFn }
+  //     suggestions = { [] }
+  //     clickCity = { clickCityFn }
+  //     inputValue = { 'city' }/>)
+  // })
 
   it('should exist', () => {
     expect(wrapper).toBeDefined()
@@ -32,12 +40,9 @@ describe('WelcomePage', () => {
     expect(button).toBeDefined()
   })
 
-  it.skip('should be clickable and run the clickSubmitFn', () => {
-    const clickSubmitFn = jest.fn();
+  it('should be clickable and run the clickSubmitFn', () => {
     const button = wrapper.find('.submit-btn')
-    console.log(button)
-
-    // wrapper.find('button').simulate('click')
+    button.simulate('click')
 
     expect(clickSubmitFn).toHaveBeenCalledTimes(1);
   })
@@ -47,5 +52,5 @@ describe('WelcomePage', () => {
     expect(inputField).toBeDefined()
   })
 
-  
+
 })
