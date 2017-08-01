@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import App from '../lib/App';
-import MockStorage from '../test_helpers/mockLocalStorage'
+import LocalStorage from '../test_helpers/mockLocalStorage';
 
 describe('App', () => {
   let wrapper;
-  // let mockStorage = MockStorage;
+  window.localStorage = new LocalStorage();
 
   beforeEach(() => {
     wrapper = shallow(<App />)
