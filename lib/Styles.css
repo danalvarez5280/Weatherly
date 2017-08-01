@@ -7,9 +7,9 @@ body {
 }
 
 .binoculars-image {
-  height: 30px;
-  margin: 10px;
-  width: 30px;
+  height: 50px;
+  margin: 0;
+  width: 50px;
 }
 
 .card, .recent-cities {
@@ -69,7 +69,7 @@ h1 {
   background-color: #F45B69;
   color: #FAFAFA;
   height: 40px;
-  margin: 10px 20px;
+  margin: 15px 20px 0px;
   text-shadow: 2px 2px black;
 }
 
@@ -89,6 +89,13 @@ html {
 
 .inputs {
   margin-top: 15px;
+}
+
+.left-nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-icon {
@@ -135,10 +142,10 @@ html {
 }
 
 .small-icon {
-  height: 30px;
+  height: 20px;
   filter: hue-rotate(-600deg);
   filter:brightness(0.4);
-  width: 30px;
+  width: 20px;
 }
 
 .submit-btn {
@@ -225,6 +232,10 @@ html {
   width: 200px;
 }
 
+.weather-icon {
+  align-items: center;
+  justify-content: center;
+
 .welcome-header {
   background-color: #F45B69;
   display: flex;
@@ -232,6 +243,7 @@ html {
   justify-content: center;
   margin: 0;
   width: 100vw;
+
 }
 
 .welcome-search {
