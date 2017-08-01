@@ -1,8 +1,3 @@
-/* Colors
-    Snow - #B9C6C9 -- COLD
-    Sun or Cloud - #0FA3B1 -- SUNNY
-    Thunderstorm or Rain - #4F6272 --RAINY */
-
 body {
   background-color: #0D3B66;
   display: flex;
@@ -107,8 +102,8 @@ hr {
 
 .nav-button {
   background-color: #0D3B66;
-  color: #FAF0CA;
   border: 1px solid black;
+  color: #FAF0CA;
   height: 26px;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -117,9 +112,9 @@ hr {
 }
 
 .nav-button:hover:enabled {
-  cursor: pointer;
   background-color: #FAF0CA;
   color:#0D3B66;
+  cursor: pointer;
 }
 
 .suggestion-button:hover {
@@ -135,10 +130,9 @@ hr {
 }
 
 .current-weather {
-  background-color: #0FA3B1;
   border-top: 1px solid black;
   border-right: 1px solid black;
-  color: #FAF0CA;
+  color: #EFE2B3;
   flex: 2;
   min-height: 100vh;
   padding: 20px;
@@ -183,7 +177,6 @@ hr {
   color: white;
   cursor: pointer;
   opacity: 0.3;
-
 }
 
 .card-info {
@@ -209,9 +202,9 @@ hr {
 
 .small-icon {
   height: 30px;
-  width: 30px;
   filter: hue-rotate(-600deg);
   filter:brightness(0.4);
+  width: 30px;
 }
 
 .creeper {
@@ -230,10 +223,10 @@ hr {
 
 .tab-navigation button {
   background-color: #EAF6F9;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-left: 1px solid black;
   border-bottom: none;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
   color: black;
   margin-right: 5px;
   opacity: 0.7;
