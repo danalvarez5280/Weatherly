@@ -1,9 +1,8 @@
-class LocalStorage {
+export default class LocalStorage {
   constructor() {
     this.store = {
       recentCities: [],
-      currentCity: ''
-    }
+      currentCity: ''}
   }
 
   getItem(key) {
@@ -18,5 +17,3 @@ class LocalStorage {
     this.store = {}
   }
 }
-
-module.export = LocalStorage;
