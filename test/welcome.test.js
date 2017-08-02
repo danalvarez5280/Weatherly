@@ -16,27 +16,16 @@ describe('WelcomePage', () => {
     setCity = { setCityFn }
     suggestions = { [] }
     clickCity = { clickCityFn }
-    inputValue = { 'Den' }/>)
+    inputValue = { 'Den' }
+    />)
 
   const mountWrap = mount(<WelcomePage
     clickedSubmit = { clickSubmitFn }
     setCity = { setCityFn }
     suggestions = { [] }
     clickCity = { clickCityFn }
-    inputValue = { 'Den' }/>)
-
-  // beforeEach(() => {
-  //   const clickSubmitFn = jest.fn();
-  //   const setCityFn = jest.fn();
-  //   const clickCityFn = jest.fn();
-  //
-  //   const wrapper = shallow(<WelcomePage
-  //     clickedSubmit = { clickSubmitFn }
-  //     setCity = { setCityFn }
-  //     suggestions = { [] }
-  //     clickCity = { clickCityFn }
-  //     inputValue = { 'city' }/>)
-  // })
+    inputValue = { 'Den' }
+    />)
 
   it('should exist', () => {
     expect(wrapper).toBeDefined()
