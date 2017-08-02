@@ -18,6 +18,13 @@ describe('WelcomePage', () => {
     clickCity = { clickCityFn }
     inputValue = { 'Den' }/>)
 
+  const mountWrap = mount(<WelcomePage
+    clickedSubmit = { clickSubmitFn }
+    setCity = { setCityFn }
+    suggestions = { [] }
+    clickCity = { clickCityFn }
+    inputValue = { 'Den' }/>)
+
   // beforeEach(() => {
   //   const clickSubmitFn = jest.fn();
   //   const setCityFn = jest.fn();
@@ -93,6 +100,26 @@ describe('WelcomePage', () => {
   it('should have a suggestion button', () => {
     const cityButton = wrapper.find('.suggestion-button')
     expect(cityButton).toBeDefined()
+  })
+
+  it('should have "Den" as the value of the input field', () => {
+    expect(mountWrap.props().inputValue).toEqual('Den')
+  })
+
+  it('should have an empty array for its suggestions property', () => {
+    expect(mountWrap.props().suggestions).toEqual([])
+  })
+
+  it('should have a property clickedSubmit that calls clickSubmitFn', () => {
+    expect(mountWrap.props().clickedSubmit).toEqual(clickSubmitFn)
+  })
+
+  it('should have a property setCity that calls setCityFn', () => {
+    expect(mountWrap.props().setCity).toEqual(setCityFn)
+  })
+
+  it('should have a property cityClicked that calls cityClickedFn', () => {
+    expect(mountWrap.props().clickCity).toEqual(clickCityFn)
   })
 
   it.skip('should have a suggestion button that is clickable and runs the clickCityFn', () => {

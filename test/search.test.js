@@ -70,4 +70,8 @@ describe('Search', () => {
   it('should have a function for the setCity property', () => {
     expect(mountWrap.props().setCity).toEqual(setCityFn)
   })
+
+  it('should have a function for the clickCity property', () => {
+    expect(mountWrap.props().clickCity).toEqual(clickCityFn)
+  })
 })
