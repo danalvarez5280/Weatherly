@@ -15,6 +15,12 @@ describe('App', () => {
     expect(wrapper).toBeDefined()
   })
 
+  it('should simulate a state change', () => {
+    expect(wrapper.state().city).toEqual('')
+    wrapper.instance().setCity('Denver')
+    expect(wrapper.state().city).toEqual('Denver')
+  })
+
   it('should render the components pretty much everything', () => {
     expect(wrapper.find('WelcomePage').length).toEqual(1)
   })
