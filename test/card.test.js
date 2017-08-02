@@ -19,4 +19,12 @@ describe('Card', () => {
   it('should have 1 containing div tag', () => {
     expect(wrapper.find('div').length).toEqual(1)
   })
+
+  it.skip('should have 7 card properties for display', () => {
+    expect(wrapper.find('p').length).toEqual(7)
+  })
+
+  it.skip('should have a property sevenHourInfo set to an empty array', () => {
+  expect(mountWrap.props().sevenHourInfo).toEqual([])
+  })
 })

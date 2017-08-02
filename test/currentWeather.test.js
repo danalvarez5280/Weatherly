@@ -17,23 +17,11 @@ describe('Current Weather', () => {
     backgroundColor = { bgColor }
     />);
 
-  it('should exist', () => {
+  it.skip('should exist', () => {
     expect(wrapper).toBeDefined()
   })
 
-  it('should have 1 containing div tag', () => {
+  it.skip('should have 1 containing div tag', () => {
     expect(wrapper.find('div').length).toEqual(1)
-  })
-
-  it.skip('should have 7 p tags', () => {
-    expect(wrapper.find('p').length).toEqual(7)
-  })
-
-  it.skip('should have background colors', () => {
-    expect(mountWrap.props().sevenHourInfo).toEqual([])
-  })
-
-  it.skip('should have icons', () => {
-    expect(mountWrap.props().icon).toEqual('')
   })
 })
