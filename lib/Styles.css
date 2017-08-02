@@ -257,7 +257,7 @@ html {
 }
 
 /* Media Queries */
-@media (max-width: 555px) {
+/*@media (max-width: 555px) {
   body {
     background-color: #F45B69;
   }
@@ -288,5 +288,4 @@ html {
   /*body {
     background-color: red;
   }*/
-
-}
+/*}*/

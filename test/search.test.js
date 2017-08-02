@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Search from '../lib/Search';
-import LocalStorage from '../test_helpers/mockLocalStorage';
 
 describe('Search', () => {
 
@@ -48,7 +47,6 @@ describe('Search', () => {
 
     submitButton.simulate('click')
     expect(clickSubmitFn).toHaveBeenCalledTimes(2)
-
   })
 
   it('should have 1 input field', () => {

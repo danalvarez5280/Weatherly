@@ -30,7 +30,7 @@ describe('TendDay', () => {
     expect(mountWrap.props().tenDayInfo).toEqual([])
   })
 
-  it('should have a property of icon set to an empyt string', () => {
+  it('should have a property of icon set to an empty string', () => {
     expect(mountWrap.props().icon).toEqual('')
   })
 })
