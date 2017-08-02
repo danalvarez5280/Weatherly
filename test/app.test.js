@@ -39,7 +39,7 @@ describe('App', () => {
     expect(wrapper.state().tempCities).toEqual(expect.arrayContaining([]))
   })
 
-  it('should have soem states set to boolean values', () => {
+  it('should have some states set to boolean values', () => {
     expect(wrapper.state().searchClicked).toEqual(false)
     expect(wrapper.state().sevenClicked).toEqual(false)
     expect(wrapper.state().tenClicked).toEqual(false)
@@ -47,5 +47,4 @@ describe('App', () => {
     expect(wrapper.state().displayWelcome).toEqual(true)
   })
 
-  
 })

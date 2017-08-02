@@ -255,38 +255,3 @@ html {
   justify-content: center;
   text-shadow: 1px 1px 5px black;
 }
-
-/* Media Queries */
-@media (max-width: 555px) {
-  body {
-    background-color: #F45B69;
-  }
-
-  .binoculars-image {
-    height: 25px;
-    margin-top: 0;
-    width: 25px;
-  }
-
-  h1 {
-    font-size: 18px;
-    margin: 0;
-  }
-
-  .inputs {
-    position: absolute;
-    left: 10px;
-    top: 20px;
-  }
-
-  .tab-navigation {
-    margin-top: 20px;
-  }
-}
-
-@media (max-width: 455px) {
-  /*body {
-    background-color: red;
-  }*/
-
-}
