@@ -103,6 +103,15 @@ html {
   width: 65px;
 }
 
+.message {
+  background-color: #0D3B66;
+  color: black;
+  font-size: 12px;
+  /*display: none;*/
+  height: 40px;
+  width: 200px;
+}
+
 .my-city, .seven-hour,
 .ten-day {
   display: flex;
